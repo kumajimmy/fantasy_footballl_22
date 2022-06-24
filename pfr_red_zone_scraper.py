@@ -52,11 +52,11 @@ for year in range(start_year, end_year+1):
         df[each] = df[each].str.rstrip('%')
         df[each] = pd.to_numeric(df[each], errors = 'coerce')
 
-    df = df.rename({'Player':'player', 'Tm':'team'}, axis=1)
-    df.loc[:,['player']] = df['player'].apply(suffix_name_remove)
-    df['player'] = df['player'].str.lower()
-    df['player'] = df['player'].str.replace('.','', regex=True)
+    df = df.rename({'Player':'player_name', 'Tm':'team'}, axis=1)
+    df.loc[:,['player_name']] = df['player_name'].apply(suffix_name_remove)
+    df['player_name'] = df['player_name'].str.lower()
+    df['player_name'] = df['player_name'].str.replace('.','', regex=True)
 
     redzone_df = pd.concat([redzone_df, df])
 
-redzone_df.to_csv('/PATH', index=False)
+redzone_df.to_csv('/Users/brandynklee/Python_Projects/fantasy_footballl_22/data/rz_receiving_compiled_2013_2021.csv', index=False)
