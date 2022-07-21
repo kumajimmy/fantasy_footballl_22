@@ -1,4 +1,4 @@
-# Breakout (BO) Wide Receiver (WR) Study for 2022-2023 Season
+# Breakout (BO) Wide Receiver (WR) Study for 2022-2023 NFL Season
 
 In this repo, you will find a jupyter notebook outlining the steps taken to determine a breakout WR based on this upcoming season's ADP data.
 
