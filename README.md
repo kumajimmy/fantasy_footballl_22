@@ -1,5 +1,8 @@
-# Fantasy Football Projections for 2021
+# Breakout (BO) Wide Receiver (WR) Study for 2022-2023 Season
 
-In this repo, you'll find fantasy football projections for the 2021 season for use in your VOR models or whatever fantasy football project you're working on. 
+In this repo, you will find a jupyter notebook outlining the steps taken to determine a breakout WR based on this upcoming season's ADP data.
 
-If you want to update the projections manually yourself: clone this repo, create a Python virtual environment, install the requirements found in `requirements.txt`1 using `pip install -r requirements.txt`. Head over to this FantasyPros link and download and replace each position CSV file in the `data` folder. Unfortanently, scraping the page does not work. Once you download and replace the position-specific projections, activate the virtual environment and run python `compile.py`. This will compile all projections in to a single `all_compiled.csv` file in the `data` folder. You can use this CSV file like you did with 2020 data in the VOR section of the course. For ADP data, head to this Fantasy Pros link. This data is scrapable with bs4.
+If you want to follow along: clone this repo, create a Python virtual environment, install the requirements found in `requirements.txt` using `pip install -r requirements.txt`.
+
+In the PFR_scripts folder, there are a few different scripts to scrape specific types of data off of Pro Football Reference. Please feel free to use them.
+In the Other folder, there are a variety of other quick studies that I did as I learned to data munge and analyze. They are not as well documented as the purpose of this repo is for breakout WR study.
